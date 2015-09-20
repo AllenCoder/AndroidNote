@@ -50,7 +50,8 @@ pageContext
             (2)域对象,四大作用域的入口,可以操作四大作用域中的域属性
                 
                 作用范围: 当前jsp页面
-                生命周期: 当对jsp页面的访问开始时,创建代表当前jsp的PageContext,                当对当前jsp页面访问结束时销毁代表当前jsp的pageContext
+                生命周期: 当对jsp页面的访问开始时,创建代表当前jsp的PageContext,  
+                              当对当前jsp页面访问结束时销毁代表当前jsp的pageContext
                 作用:在当前jsp中共享数据
                 
                     public void setAttribute(java.lang.String name,java.lang.Object value)
