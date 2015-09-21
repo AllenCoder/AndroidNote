@@ -13,6 +13,9 @@
     </servlet-mapping>
     
 ```
+效果图
+![效果图](http://img.blog.csdn.net/20150921231626774)
+
 2. Jsp最佳实践
 
 	*** 
