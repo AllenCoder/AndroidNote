@@ -1,0 +1,54 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="net.coding.program.user.UsersListActivity">
+
+    <item
+        android:id="@+id/action_search"
+        android:icon="@drawable/ic_menu_search"
+        android:title="搜索"
+        app:showAsAction="always" />
+
+    <!--<item android:id="@+id/action_search"-->
+    <!--android:title="搜索"-->
+    <!--android:icon="@drawable/ic_menu_search"-->
+    <!--app:showAsAction="ifRoom|collapseActionView"-->
+    <!--app:actionViewClass="android.support.v7.widget.SearchView" />-->
+
+    <item
+        android:id="@+id/action_more"
+        android:icon="@drawable/ic_menu_add"
+        android:title="@string/action_more"
+        app:showAsAction="always">
+        <menu>
+            <item
+                android:id="@+id/action_create"
+                android:icon="@drawable/ic_menu_add_project"
+                android:title="创建项目"
+                app:showAsAction="always" />
+            <item
+                android:id="@+id/action_create_task"
+                android:icon="@drawable/ic_menu_add_task"
+                android:title="创建任务"
+                app:showAsAction="always" />
+            <item
+                android:id="@+id/action_create_maopao"
+                android:icon="@drawable/ic_menu_add_maopao"
+                android:title="发布冒泡"
+                app:showAsAction="always" />
+
+            <item
+                android:id="@+id/action_create_friend"
+                android:icon="@drawable/ic_menu_add_friend"
+                android:title="添加好友"
+                app:showAsAction="always" />
+            <item
+                android:id="@+id/action_2fa"
+                android:icon="@drawable/ic_menu_add_task_2fa"
+                android:title="@string/title_activity_login2_fatip"
+                app:showAsAction="always" />
+        </menu>
+    </item>
+
+
+</menu>

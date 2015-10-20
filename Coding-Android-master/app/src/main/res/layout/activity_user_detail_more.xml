@@ -1,0 +1,158 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/divide"
+    tools:context="net.coding.program.user.UserDetailMoreActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+
+        <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="75dp"
+            android:paddingLeft="15dp">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/icon"
+                android:layout_width="53dp"
+                android:layout_height="53dp"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="12dp"
+                android:textColor="@color/font_black_2" />
+
+            <TextView
+                android:id="@+id/nameTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@id/icon"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:text="cc"
+                android:textColor="@color/font_black_2"
+                android:textSize="18sp" />
+
+        </RelativeLayout>
+
+
+        <include layout="@layout/divide_15_top_bottom" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <include
+                android:id="@+id/createAtLayout"
+                layout="@layout/list_item_2_text_align_right" />
+
+            <include layout="@layout/divide_1_12" />
+
+            <include
+                android:id="@+id/lastLoginLayout"
+                layout="@layout/list_item_2_text_align_right" />
+
+            <include layout="@layout/divide_1_12" />
+
+            <include
+                android:id="@+id/globalKeyLayout"
+                layout="@layout/list_item_2_text_align_right" />
+        </LinearLayout>
+
+
+        <include layout="@layout/divide_15_top_bottom" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <include
+                android:id="@+id/sexLayout"
+                layout="@layout/list_item_2_text_align_right" />
+
+            <include layout="@layout/divide_1_12" />
+
+            <include
+                android:id="@+id/birthdayLayout"
+                layout="@layout/list_item_2_text_align_right" />
+
+            <include layout="@layout/divide_1_12" />
+
+            <include
+                android:id="@+id/locateLayout"
+                layout="@layout/list_item_2_text_align_right" />
+
+            <include layout="@layout/divide_1_12" />
+
+            <include
+                android:id="@+id/loginsLayout"
+                layout="@layout/list_item_2_text_align_right" />
+        </LinearLayout>
+
+
+        <include layout="@layout/divide_15_top_bottom" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <include
+                android:id="@+id/companyLayout"
+                layout="@layout/list_item_2_text_align_right" />
+
+            <include layout="@layout/divide_1_12" />
+
+            <include
+                android:id="@+id/jobLayout"
+                layout="@layout/list_item_2_text_align_right" />
+
+            <include layout="@layout/divide_1_12" />
+
+            <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:id="@+id/tagsLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:minHeight="48dp"
+                android:paddingLeft="@dimen/padding_15"
+                android:paddingRight="@dimen/padding_15">
+
+                <TextView
+                    android:id="@+id/first"
+                    android:layout_width="70dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="12dp"
+                    android:text="性别"
+                    android:textColor="@color/font_black_2"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/second"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_toEndOf="@+id/first"
+                    android:layout_toRightOf="@+id/first"
+                    android:ellipsize="end"
+                    android:gravity="right"
+                    android:text=""
+                    android:textColor="@color/font_black_9"
+                    android:textSize="16sp" />
+
+            </RelativeLayout>
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+</ScrollView>

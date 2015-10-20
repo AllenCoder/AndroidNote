@@ -1,0 +1,224 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<resources>
+    <string-array name="drawer_title">
+        <item>我的项目</item>
+        <item>我的任务</item>
+        <item />
+        <item>@string/title_activity_message_list</item>
+        <item>设置</item>
+    </string-array>
+
+    <string-array name="program_title">
+        <item>全部项目</item>
+        <item>我参与的</item>
+        <item>我创建的</item>
+    </string-array>
+    <string-array name="program_title_pick">
+        <item>全部项目</item>
+    </string-array>
+
+    <string-array name="user_program_title">
+        <item>TA参与的</item>
+        <item>TA收藏的</item>
+    </string-array>
+
+    <string-array name="user_my_topic_title">
+        <item>我关注的</item>
+        <item>我参与的</item>
+    </string-array>
+
+    <string-array name="user_other_topic_title">
+        <item>TA关注的</item>
+        <item>TA参与的</item>
+    </string-array>
+
+    <string-array name="user_me_program_title">
+        <item>我参与的</item>
+        <item>我收藏的</item>
+    </string-array>
+
+    <string-array name="topic_action_types">
+        <item>热门话题</item>
+        <item>我的话题</item>
+    </string-array>
+
+    <string-array name="maopao_action_types">
+        <item>冒泡广场</item>
+        <item>好友圈</item>
+        <item>热门冒泡</item>
+    </string-array>
+
+    <string-array name="setting_list_items">
+        <item>帐号设置</item>
+        <item>消息推送</item>
+        <item>下载路径设置</item>
+        <item>意见反馈</item>
+        <item>关于Coding</item>
+    </string-array>
+
+    <string-array name="sexs">
+        <item>男</item>
+        <item>女</item>
+        <item>未知</item>
+    </string-array>
+
+    <string-array name="task_titles">
+        <item>进行中</item>
+        <item>已完成</item>
+    </string-array>
+
+    <string-array name="dynamic_type">
+        <item>全部</item>
+        <item>任务</item>
+        <item>讨论</item>
+        <item>文档</item>
+        <item>代码</item>
+        <item>其它</item>
+    </string-array>
+
+    <string-array name="dynamic_type_params">
+        <item>all</item>
+        <item>task</item>
+        <item>topic</item>
+        <item>file</item>
+        <item>code</item>
+        <item>other</item>
+    </string-array>
+
+    <string-array name="dynamic_type_public">
+        <item>全部</item>
+        <item>讨论</item>
+        <item>代码</item>
+        <item>其它</item>
+    </string-array>
+
+    <string-array name="dynamic_type_public_params">
+        <item>all</item>
+        <item>topic</item>
+        <item>code</item>
+        <item>other</item>
+    </string-array>
+
+    <string-array name="strings_priority">
+        <item>有空再看</item>
+        <item>正常处理</item>
+        <item>优先处理</item>
+        <item>十万火急</item>
+    </string-array>
+
+    <string-array name="dialog_login_fail_help">
+        <item>找回密码</item>
+        <item>重发激活邮件</item>
+    </string-array>
+
+    <string-array name="strings_priority_inverse">
+        <item>十万火急</item>
+        <item>优先处理</item>
+        <item>正常处理</item>
+        <item>有空再看</item>
+    </string-array>
+
+    <string-array name="topic_type">
+        <item>所有讨论</item>
+        <item>我参与的</item>
+    </string-array>
+
+    <string-array name="user_info_list_first">
+        <item>昵称</item>
+        <item>性别</item>
+        <item>生日</item>
+        <item>所在地</item>
+        <item>座右铭</item>
+        <item>公司</item>
+        <item>职位</item>
+        <item>个性标签</item>
+    </string-array>
+
+    <string-array name="user_detail_activity_list_first">
+        <item>所在地</item>
+        <item>座右铭</item>
+        <item>个性标签</item>
+    </string-array>
+
+    <string-array name="user_detail_list_first">
+        <item>加入时间</item>
+        <item>最后活动</item>
+        <item>个性后缀</item>
+        <item>公司</item>
+        <item>工作</item>
+        <item>地区</item>
+        <item>个性标签</item>
+    </string-array>
+
+    <string-array name="user_detail_more_list_first">
+        <item>加入时间</item>
+        <item>最后活动</item>
+        <item>个性后缀</item>
+        <item>性别</item>
+        <item>生日</item>
+        <item>所在地</item>
+        <item>座右铭</item>
+        <item>公司</item>
+        <item>职位</item>
+        <item>个性标签</item>
+    </string-array>
+
+
+    <string-array name="camera_gallery">
+        <item>相机</item>
+        <item>图片</item>
+    </string-array>
+
+    <string-array name="task_status">
+        <item>未完成</item>
+        <item>已完成</item>
+    </string-array>
+
+    <string-array name="message_action_text">
+        <item>复制</item>
+        <item>转发</item>
+        <item>删除</item>
+    </string-array>
+
+    <string-array name="message_action_image">
+        <item>转发</item>
+        <item>删除</item>
+    </string-array>
+
+    <string-array name="message_action_text_copy">
+        <item>复制</item>
+    </string-array>
+
+    <string-array name="topic_label_action">
+        <item>重命名</item>
+        <item>删除</item>
+    </string-array>
+    <string-array name="project_pin">
+        <item>设为常用</item>
+    </string-array>
+
+    <string-array name="project_pin_cannel">
+        <item>取消常用</item>
+    </string-array>
+
+    <string-array name="auth_item_actions">
+        <item>复制</item>
+        <item>删除</item>
+    </string-array>
+    
+    <string-array name="comment_sort">
+        <item>最旧评论</item>
+        <item>最新评论</item>
+    </string-array>
+
+    <!--<string-array name="commnet_my">-->
+    <!--<item>复制</item>-->
+    <!--<item>回复</item>-->
+    <!--</string-array>-->
+    <!-- -->
+    <!--<string-array name="commnet_other">-->
+    <!--<item>复制</item>-->
+    <!--<item>删除</item>-->
+    <!--</string-array>-->
+
+</resources>

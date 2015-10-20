@@ -1,0 +1,104 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<resources>
+    <item name="green" type="color">#FF3BBD79</item>
+    <item name="gray" type="color">#FF323A45</item>
+    <item name="gray_drawable" type="drawable">#FF323A45</item>
+
+    <item name="drawer_bg_color_normal" type="color">#00ffffff</item>
+    <item name="drawer_bg_color_press" type="color">#ffeeeeee</item>
+    <item name="drawer_bg_color_white" type="color">#ff2d353f</item>
+    <item name="drawer_bg_color_divide" type="color">#ff243040</item>
+    <item name="drawer_bg_color_bottom" type="color">#ff1e2733</item>
+
+    <item name="button_disable" type="color">#ffc6c6c6</item>
+    <item name="button_parent" type="color">#ffeeeeee</item>
+
+    <item name="line_green" type="drawable">#ff3bbd79</item>
+    <item name="line_gray" type="drawable">#ffc7cacc</item>
+    <color name="background_tab_pressed">#ffffff</color>
+    <color name="white">#ffffffff</color>
+    <color name="white_pressed">#ffd5d5d5</color>
+    <color name="white_pressed1">#ffdfdfdf</color>
+    <drawable name="white">#ffffffff</drawable>
+    <color name="font_black">#010101</color>
+    <drawable name="black">#ff000000</drawable>
+    <color name="black">#ff000000</color>
+
+    <color name="file_downloaded">#ffe9f5f0</color>
+
+    <color name="input_background">#ffe8e8e8</color>
+
+    <color name="gray_dark">#f0f0f0</color>
+
+    <color name="font_green_1">#ff09b058</color>
+    <color name="font_green">#ff3bbd79</color>
+    <drawable name="font_green">#ff3bbd79</drawable>
+    <color name="font_black_0">#000000</color>
+    <color name="font_black_content">#ff222222</color>
+    <color name="font_black_2">#ff222222</color>
+    <color name="font_black_content_disabled">#ffcacaca</color>
+    <color name="font_black_comment">#ff666666</color>
+    <color name="font_black_6">#ff666666</color>
+    <color name="font_black_9">#999999</color>
+    <color name="font_white">#ffffffff</color>
+    <color name="font_white_disable">#7fffffff</color>
+
+    <color name="bg_maopao_comment">#ffeeeeee</color>
+    <drawable name="bg_maopao_comment">#ffeeeeee</drawable>
+    <color name="task_list_head">#ffe4e4e4</color>
+    <color name="divide">#ffeeeeee</color>
+    <color name="divide_line">#ffdddddd</color>
+    <color name="divide_line_e2">#ffe2e2e2</color>
+
+    <color name="divide_line_81">#ff818181</color>
+
+    <color name="search_divide_color">#e3e3e3</color>
+
+    <drawable name="system_divide">#ffdddddd</drawable>
+
+    <color name="stand_bg">#fff6f6f6</color>
+    <color name="stand_tab_bg">#ffffff</color>
+    <color name="bg_fa">#fafafa</color>
+
+    <color name="spinner_black">#ff313743</color>
+    <color name="spinner_divider">#ff252b37</color>
+
+    <color name="transparent">#00000000</color>
+    <drawable name="transparent">#00000000</drawable>
+
+    <color name="camera_background">#ff353535</color>
+
+    <!-- user info tags -->
+    <color name="user_info_tags_bg_1">#EBEBEB</color>
+    <color name="user_info_tags_font_1">#999999</color>
+    <color name="user_info_tags_bg_2">#3BBD79</color>
+    <color name="user_info_tags_font_2">#FFFFFF</color>
+    <!-- user info tags end -->
+    <color name="commom_loading_font">#28303B</color>
+
+    <color name="attachment_btn_layout">#E2E2E2</color>
+    <color name="attachment_btn_color">#A5A5A5</color>
+
+
+    <color name="emoji_line">#ffcbc9ca</color>
+
+    <color name="menu_item_text_disable">#ffffffff</color>
+
+
+    <color name="init_light_gray">#e2e2e2</color>
+    <color name="init_advance_header_bg">#f7f3d6</color>
+    <color name="init_advance_text_gray">#666666</color>
+    <color name="init_advance_text_red">#f34a4a</color>
+    <color name="init_common_bg">#e5e5e5</color>
+
+    <color name="merge_red">#fff34a4a</color>
+    <color name="merge_green">#ff3BBD79</color>
+
+    <color name="merge_id">#ff4e90bf</color>
+
+    <!--二维码扫描界面-->
+    <color name="result_view">#b0000000</color>
+    <color name="viewfinder_mask">#60000000</color>
+    <color name="possible_result_points">#c0ffff00</color>
+
+</resources>

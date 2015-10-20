@@ -1,0 +1,69 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/divide"
+    android:orientation="vertical"
+    tools:context="net.coding.program.project.detail.merge.MergeDetailActivity">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <se.emilsjolander.stickylistheaders.ExpandableStickyListHeadersListView
+            android:id="@+id/listView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/stand_bg"
+            android:clipToPadding="false"
+            android:drawSelectorOnTop="true"
+            android:fastScrollEnabled="true" />
+
+    </FrameLayout>
+
+    <LinearLayout
+        android:id="@+id/actionLayout"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@color/stand_bg"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/bottom_button_padding"
+        android:paddingRight="@dimen/bottom_button_padding">
+
+        <TextView
+            android:id="@+id/actionRefuse"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:background="@drawable/button_merge_refuse"
+            android:gravity="center"
+            android:text="拒绝"
+            android:textColor="@color/font_white" />
+
+        <TextView
+            android:id="@+id/actionAccept"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="@dimen/bottom_button_padding"
+            android:layout_weight="1"
+            android:background="@drawable/button_merge_accept"
+            android:gravity="center"
+            android:text="合并"
+            android:textColor="@color/font_white" />
+
+        <TextView
+            android:id="@+id/actionCancel"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="@dimen/bottom_button_padding"
+            android:layout_weight="1"
+            android:background="@drawable/edit_send"
+            android:gravity="center"
+            android:text="取消"
+            android:textColor="@color/font_black_2" />
+
+    </LinearLayout>
+
+</LinearLayout>

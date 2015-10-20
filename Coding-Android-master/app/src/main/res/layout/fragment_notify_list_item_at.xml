@@ -1,0 +1,58 @@
+<net.coding.program.message.TouchLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="net.coding.program.message.NotifyListActivity">
+
+    <com.readystatesoftware.viewbadger.BadgeView
+        android:id="@+id/badge"
+        android:layout_width="9dp"
+        android:layout_height="9dp"
+        android:layout_marginLeft="@dimen/padding_12"
+        android:layout_marginRight="@dimen/padding_12"
+        android:layout_marginTop="25dp"
+        android:background="@drawable/ic_notify"
+        android:gravity="center"
+        android:visibility="invisible" />
+
+    <ImageView
+        android:id="@+id/icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="@dimen/padding_12"
+        android:paddingTop="15dp"
+        android:src="@drawable/ic_notify_at" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingLeft="0dp"
+        android:paddingRight="12dp">
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:lineSpacingExtra="3dp"
+            android:paddingBottom="12dp"
+            android:paddingTop="15dp"
+            android:text="A栋飞等到了"
+            android:textColor="@color/font_black_content"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:drawableLeft="@drawable/ic_clock"
+            android:drawablePadding="5dp"
+            android:paddingBottom="9dp"
+            android:paddingTop="0dp"
+            android:text="2小时"
+            android:textColor="@color/font_black_9" />
+
+    </LinearLayout>
+
+</net.coding.program.message.TouchLinearLayout>

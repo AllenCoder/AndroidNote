@@ -1,0 +1,20 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:scan="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <net.coding.program.third.MyQRCodeReaderView
+        android:id="@+id/qrdecoderview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <net.coding.program.login.auth.qrscan.ScanMaskView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        scan:scan_width="@dimen/scanview_width" />
+
+</RelativeLayout>

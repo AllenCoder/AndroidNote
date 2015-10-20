@@ -1,0 +1,10 @@
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="net.coding.program.common.photopick.PhotoPickDetailActivity">
+    <item
+        android:id="@+id/action_send"
+        android:title="发送"
+        android:orderInCategory="100"
+        app:showAsAction="always" />
+</menu>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/project_item_height"
+    android:background="@drawable/list_item_selector"
+    android:gravity="center_vertical"
+    android:orientation="horizontal">
+
+    <View
+        android:id="@+id/icon"
+        android:layout_width="@dimen/project_icon_width"
+        android:layout_height="@dimen/project_icon_width"
+        android:layout_marginLeft="@dimen/padding_15"
+        android:background="@drawable/project_button_icon_dynamic" />
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/padding_15"
+        android:layout_weight="1"
+        android:text="动态"
+
+        android:textColor="@color/font_black_2"
+        android:textSize="@dimen/project_icon_text"
+        android:visibility="visible" />
+
+    <com.readystatesoftware.viewbadger.BadgeView
+        android:id="@+id/badge"
+        android:layout_width="9dp"
+        android:layout_height="9dp"
+        android:layout_marginRight="19.5dp"
+        android:background="@drawable/ic_notify"
+        android:gravity="center"
+        android:visibility="invisible" />
+
+</LinearLayout>

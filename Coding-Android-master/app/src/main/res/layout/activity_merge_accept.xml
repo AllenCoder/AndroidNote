@@ -1,0 +1,68 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/divide"
+    android:orientation="vertical"
+    tools:context="net.coding.program.project.detail.merge.MergeAcceptActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:gravity="center"
+        android:paddingLeft="@dimen/padding_15"
+        android:text="Message"
+        android:textColor="@color/font_black_9"
+        android:textSize="15sp" />
+
+    <include layout="@layout/divideline_15" />
+    <EditText
+        android:id="@+id/message"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/stand_bg"
+        android:gravity="left|top"
+        android:hint="输入合并信息"
+        android:minLines="5"
+        android:padding="@dimen/padding_15" />
+
+    <include layout="@layout/divide_15_top_bottom" />
+
+    <LinearLayout
+        android:id="@+id/listItemDelSrc"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/mergefile_list_item_height"
+        android:background="@color/stand_bg"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/padding_15"
+        android:paddingRight="@dimen/padding_15">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="删除源分支" />
+
+        <View
+            android:id="@+id/delSrc"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:background="@drawable/ic_task_status_list_check" />
+
+    </LinearLayout>
+
+    <include layout="@layout/divide_15_top" />
+
+    <TextView
+        android:id="@+id/send"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginLeft="@dimen/bottom_button_padding"
+        android:layout_marginRight="@dimen/bottom_button_padding"
+        android:background="@drawable/button_merge_accept"
+        android:gravity="center"
+        android:text="合并"
+        android:textColor="@color/font_white" />
+
+</LinearLayout>

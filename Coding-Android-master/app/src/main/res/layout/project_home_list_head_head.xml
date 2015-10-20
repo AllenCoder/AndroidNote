@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <RelativeLayout
+        android:id="@+id/projectHeaderLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clickable="true">
+
+        <ImageView
+            android:id="@+id/projectIcon"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="@dimen/padding_15"
+            android:layout_marginStart="23dp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/round_icon_path"
+            android:padding="@dimen/project_icon_edge_width"
+            android:src="@color/font_black_0" />
+
+        <TextView
+            android:id="@+id/projectName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/projectIcon"
+            android:layout_marginLeft="15dp"
+            android:layout_marginStart="29dp"
+            android:layout_marginTop="3dp"
+            android:layout_toLeftOf="@+id/iconRight"
+            android:layout_toRightOf="@+id/projectIcon"
+            android:layout_toStartOf="@+id/iconRight"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:text="Medium Text"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@color/font_black_2"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/recommendIcon"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_alignTop="@id/projectName"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="2dp"
+            android:layout_toRightOf="@id/projectName"
+            android:background="@drawable/round_rect_shape_green2"
+            android:gravity="center"
+            android:text="荐"
+            android:textColor="@color/white"
+            android:textSize="10sp"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/projectAuthor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/projectName"
+            android:layout_alignStart="@+id/projectName"
+            android:layout_below="@+id/projectName"
+            android:layout_marginTop="7dp"
+            android:text="Small Text"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="@color/font_black_9" />
+
+        <View
+            android:id="@+id/iconPrivate"
+            android:layout_width="11dp"
+            android:layout_height="11dp"
+            android:layout_alignLeft="@+id/projectAuthor"
+            android:layout_alignStart="@+id/projectAuthor"
+            android:layout_alignTop="@+id/projectAuthor"
+            android:layout_marginTop="4.5dp"
+            android:background="@drawable/ic_project_private1"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/iconRight"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="14dp"
+            android:src="@drawable/ic_list_right_arr" />
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_marginLeft="@dimen/padding_15"
+        android:layout_marginRight="@dimen/padding_15"
+        android:layout_marginTop="15dp"
+        android:background="@color/divide_line" />
+</merge>

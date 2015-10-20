@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:listItem1="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="@dimen/padding_12">
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dp"
+            android:layout_marginLeft="12dp"
+            android:layout_marginRight="12dp"
+            android:layout_marginTop="12dp"
+            android:maxLines="2"
+            android:text="Medium Text"
+            android:textColor="@color/font_black_content"
+            android:textSize="20sp" />
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/icon"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_below="@id/title"
+            android:layout_marginLeft="12dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="0dp" />
+
+        <TextView
+            android:id="@+id/time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/icon"
+            android:layout_marginBottom="1dp"
+            android:layout_toRightOf="@+id/icon"
+            android:text="Small Text"
+            android:textColor="@color/font_black_9" />
+
+        <TextView
+            android:id="@+id/mergeStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/icon"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/padding_15"
+            android:text="已拒绝" />
+
+    </RelativeLayout>
+
+    <include layout="@layout/divideline_15" />
+
+    <org.apmem.tools.layouts.FlowLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/padding_12"
+        android:layout_marginLeft="@dimen/padding_15"
+        android:layout_marginRight="@dimen/padding_15"
+        android:layout_marginTop="@dimen/padding_12"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/branchSrc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/merge_detail_branch_buttom"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:text="merge_request"
+            android:textColor="@color/merge_id" />
+
+        <View
+            android:layout_width="24dp"
+            android:layout_height="12dp"
+            android:layout_margin="@dimen/padding_10"
+            android:background="@drawable/merge_detail_arrow" />
+
+        <TextView
+            android:id="@+id/branchDesc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/merge_detail_branch_buttom"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:text="master"
+            android:textColor="@color/merge_id" />
+    </org.apmem.tools.layouts.FlowLayout>
+
+    <LinearLayout
+        android:id="@+id/mergeTreate"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginBottom="@dimen/padding_12"
+        android:layout_marginLeft="@dimen/padding_15"
+        android:layout_marginRight="@dimen/padding_15"
+        android:gravity="center_vertical">
+
+        <View
+            android:id="@+id/mergeIcon0"
+            android:layout_width="3dp"
+            android:layout_height="match_parent"
+            android:background="@color/merge_red" />
+
+        <View
+            android:id="@+id/mergeIcon1"
+            android:layout_width="16dp"
+            android:layout_height="16dp"
+            android:layout_marginLeft="@dimen/padding_10"
+            android:layout_marginRight="@dimen/padding_10"
+            android:background="@drawable/ic_listitem_merge_refuse" />
+
+        <TextView
+            android:id="@+id/mergeActionUser"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="jeff"
+            android:textColor="@color/font_black_2" />
+        <TextView
+            android:id="@+id/mergeLog"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" 1天前 拒绝了这个合并请求" />
+
+    </LinearLayout>
+
+    <include
+        android:id="@+id/mergeContentDivide"
+        layout="@layout/divideline_15" />
+
+    <TextView
+        android:id="@+id/mergeContent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/padding_15"
+        android:layout_marginLeft="@dimen/padding_15"
+        android:layout_marginRight="@dimen/padding_15"
+        android:layout_marginTop="@dimen/padding_12"
+        android:text="this is contetn" />
+
+    <include layout="@layout/divide_15_top_bottom" />
+
+    <net.coding.program.common.widget.ListItem1
+        android:id="@+id/itemCommit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:focusable="false"
+        listItem1:itemIcon="@drawable/ic_listitem_commit"
+        listItem1:itemTitle="提交记录" />
+
+    <include layout="@layout/divideline_15" />
+
+    <net.coding.program.common.widget.ListItem1
+        android:id="@+id/itemFile"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:focusable="false"
+        listItem1:itemIcon="@drawable/ic_listitem_mergefile"
+        listItem1:itemTitle="文件改动" />
+
+</LinearLayout>

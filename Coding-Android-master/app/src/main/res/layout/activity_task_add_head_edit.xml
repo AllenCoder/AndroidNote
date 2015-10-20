@@ -1,0 +1,33 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/stand_bg"
+    android:orientation="vertical"
+    tools:context="net.coding.program.task.add.TaskAddActivity">
+
+    <net.coding.program.project.detail.TopicLabelBar_
+        android:id="@+id/labelBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/icon"
+        android:layout_marginTop="5dp" />
+
+    <include layout="@layout/divide_1_12" />
+
+    <EditText
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_gravity="center_horizontal|top"
+        android:layout_margin="12dp"
+        android:layout_marginTop="10dp"
+        android:background="@null"
+        android:gravity="top"
+        android:minLines="3"
+        android:textColor="@color/font_black_content"
+        android:textSize="17sp" />
+
+</LinearLayout>
+

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/Commentlayout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:paddingBottom="12dp">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/icon"
+        android:layout_width="37dp"
+        android:layout_height="37dp"
+        android:layout_margin="12dp"
+        android:src="@drawable/ic_default_user" />
+
+    <LinearLayout
+        android:id="@+id/layoutContent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/icon"
+        android:layout_toRightOf="@+id/icon"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/icon"
+            android:layout_below="@+id/name"
+            android:layout_marginRight="12dp"
+            android:background="@drawable/content_pressed_selector"
+            android:lineSpacingExtra="1dp"
+            android:lineSpacingMultiplier="1.1"
+            tools:text="内容很多"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="@color/font_black_content"
+            android:textSize="15sp" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/layoutContent"
+        android:layout_below="@id/layoutContent"
+        android:layout_marginTop="10dp"
+        android:text="超级小胖纸"
+        android:textColor="@color/font_black_comment"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/name"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@id/name"
+        android:drawableLeft="@drawable/ic_clock"
+        android:drawablePadding="5dp"
+
+        android:text="3分钟前"
+        android:textColor="@color/font_black_9"
+        android:textSize="12sp" />
+
+</RelativeLayout>

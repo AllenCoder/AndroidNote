@@ -1,0 +1,50 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.Toolbar
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/colorPrimary"
+        android:minHeight="?attr/actionBarSize"
+        app:theme="@style/ToolbarColoredBackArrow" />
+
+    <net.coding.program.subject.loop.AutoScrollLoopViewPager
+        android:id="@+id/loopViewPager"
+        android:layout_width="match_parent"
+        android:layout_height="120dp" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/topic_my_container"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/stand_bg"
+            android:orientation="vertical">
+
+            <net.coding.program.third.WechatTab
+                android:id="@+id/tabs"
+                android:layout_width="match_parent"
+                android:layout_height="48dip"
+                android:background="@android:color/transparent" />
+
+            <android.support.v4.view.ViewPager
+                android:id="@+id/pager"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+        <FrameLayout
+            android:id="@+id/topic_hot_container"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/stand_bg" />
+
+    </FrameLayout>
+
+</LinearLayout>
