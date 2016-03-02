@@ -162,6 +162,7 @@
 ### Android 热更新
  - [dexposed](https://github.com/alibaba/dexposed)
  - [AndFix](https://github.com/alibaba/AndFix)
+ - [AndFix学习记录](http://www.jianshu.com/p/0f7665944be3)
 
 ### 安卓开发值得关注的库
  - [Android对话框](https://github.com/H07000223/FlycoDialog_Master)
@@ -193,6 +194,7 @@
  - [Android开发常用整理](https://github.com/wangjiegulu/AndroidBucket)
  - [左滑粒子删除效果](https://github.com/ZhaoKaiQiang/ParticleLayout)
  - [JSON Server：零编码快速“伪造” REST API](https://github.com/typicode/json-server)
+ - [开源音乐播放器](https://github.com/AllenCoder/android-UniversalMusicPlayer)
 
 ### 安卓资源相关
  - [安卓每个版本的Drawable图标](http://androiddrawables.com/)
