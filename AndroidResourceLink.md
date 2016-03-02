@@ -119,6 +119,7 @@
 ### Android 应用内测平台
  - [蒲公英，内测应用](http://www.pgyer.com/)
  - [Fir.im，内测应用](http://fir.im/)
+ - [优测云手机](http://utest.qq.com/)
 
 ### Android社会化分享，短信验证，意见反馈，支付等相关
 
