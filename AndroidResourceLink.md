@@ -283,9 +283,11 @@
  - [bootstrap-filestyle](https://github.com/markusslima/bootstrap-filestyle)
  - [基于Codeigniter的CMS系统](https://github.com/znddzxx112/bitcms)
 
+
 ### 其他
  - [google hosts](http://laod.cn/hosts/2015-google-hosts.html)
  - [开源中国在线工具](http://tool.oschina.net/)
  - [Vim插件](https://github.com/vim-scripts/Auto-Pairs)
  - [hack_erya](https://github.com/Bpazy/hack_erya)
  - [owncloud](https://github.com/owncloud/)
+ - [Mac OS X 和 Linux 下更好用的微信客户端: Electronic Wechat](https://github.com/geeeeeeeeek/electronic-wechat)
