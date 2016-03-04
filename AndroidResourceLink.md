@@ -85,12 +85,14 @@
  - [西源坊](https://github.com/lzjun567/XiYuanFangApp)
 
 
+
 ### Android 开发辅助工具
  - [Google Play APK下载器](http://apps.evozi.com/apk-downloader/)
  - [slideshare](http://www.slideshare.net/)
  - [codota代码片段搜索，支持Chrome和Android Studio](https://www.codota.com/)
  - [vysor 这个是Chrome的插件，电脑操作手机](https://chrome.google.com/webstore/detail/vysor-beta/gidgenkbbabolejbgbpnhbimgjbffefm)
  - [Browser extension to display GitHub code in tree format](https://github.com/buunguyen/octotree)
+ - [酷传多渠道打包工具](http://www.coolchuan.com/)
 
 
 
@@ -120,6 +122,7 @@
  - [蒲公英，内测应用](http://www.pgyer.com/)
  - [Fir.im，内测应用](http://fir.im/)
  - [优测云手机](http://utest.qq.com/)
+ - [Testin 测试](http://www.testin.cn/)
 
 ### Android社会化分享，短信验证，意见反馈，支付等相关
 
