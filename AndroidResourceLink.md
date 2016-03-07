@@ -73,6 +73,7 @@
  - [如何为drawable着色](http://www.jcodecraeer.com/a/anzhuokaifa/androidkaifa/2015/0824/3356.html)
  - [Drawable 着色的后向兼容方案](http://www.race604.com/tint-drawable/)
  - [Awesome-MaterialDesign](https://github.com/lightSky/Awesome-MaterialDesign)
+ - [滑动关闭 Activity](http://blog.csdn.net/meijian531161724/article/details/50763931)
 
  
 ### Android 开源软件
