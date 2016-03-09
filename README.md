@@ -6,3 +6,4 @@
 - [lizhangqu Github 资源链接主页](https://github.com/lizhangqu/CoreLink)
 - [Android 开发中的日常积累](https://github.com/AllenCoder/AndroidNote/blob/master/AndroidResourceLink.md)
 - [沪深300指数走势图 Android 版](https://github.com/AllenCoder/AndroidDevCoder/tree/master/linechart)
+- [Android小知识库](http://wuxiaolong.me/2015/08/10/android-small-knowledge-base/)
