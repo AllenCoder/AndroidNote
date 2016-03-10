@@ -42,6 +42,7 @@ Android MaskFilter的基本使用：
 
         要应用一个MaskFilter，可以使用setMaskFilter方法，并传递给它一个MaskFilter对象。下面的例子是对一个已经存在的Paint应用一个EmbossMaskFilter：
  [关于设置硬件加速不能用的方法](http://blog.csdn.net/hqdoremi/article/details/8307496)
+ 
 **LAYER_TYPE_NONE**
 
 **LAYER_TYPE_SOFTWARE**
@@ -123,9 +124,8 @@ Android MaskFilter的基本使用：
 	　　绘制图形：canvas.drawBirmap(Bitmap bitmap, float left, float top, Paint paint);
 
 
-Shader
-
-渐变色设置
+---------------
+Shader 渐变色设置
 
 ```java
  //设置渐变器后绘制
@@ -253,6 +253,7 @@ Shader.TileMode tile: 渲染器平铺模式
 
 Android 透明度渐变
 
+-------------------------
 
 **android 代码截屏**
 
@@ -343,3 +344,4 @@ public Bitmap convertBmp(Bitmap bmp) {
         return convertBmp;  
     }  
 ```
+
