@@ -54,9 +54,12 @@ Android MaskFilter的基本使用：
 	
 	myView.setLayerType(View.LAYER_TYPE_SOFTWARE, null);
 	注：您不能在view级别开启硬件加速
-	
 	为什么需要这么多级别的控制？
-	很明显，硬件加速能够带来性能提升，android为什么要弄出这么多级别的控制，而不是默认就是全部硬件加速呢？原因是并非所有的2D绘图操作支持硬件加速，如果您的程序中使用了自定义视图或者绘图调用，程序可能会工作不正常。如果您的程序中只是用了标准的视图和Drawable，放心大胆的开启硬件加速吧！具体是哪些绘图操作不支持硬件加速呢?以下是已知不支持硬件加速的绘图操作：
+	很明显，硬件加速能够带来性能提升，android为什么要弄出这么多级别的控制，
+	而不是默认就是全部硬件加速呢？原因是并非所有的2D绘图操作支持硬件加速，
+	如果您的程序中使用了自定义视图或者绘图调用，程序可能会工作不正常。
+	如果您的程序中只是用了标准的视图和Drawable，放心大胆的开启硬件加速吧！
+	具体是哪些绘图操作不支持硬件加速呢?以下是已知不支持硬件加速的绘图操作：
 	
 	Canvas
 	clipPath()
@@ -69,20 +72,29 @@ Android MaskFilter的基本使用：
 	setLinearText()
 	setMaskFilter()
 	setRasterizer()
+	
 	另外还有一些绘图操作，开启和不开启硬件加速，效果不一样：
 	
 	Canvas
 	clipRect()： XOR, Difference和ReverseDifference裁剪模式被忽略，3D变换将不会应用在裁剪的矩形上。
+	
 	drawBitmapMesh()：colors数组被忽略
+	
 	drawLines()：反锯齿不支持
+	
 	setDrawFilter()：可以设置，但无效果
+	
 	Paint
+	
 	setDither()： 忽略
 	setFilterBitmap()：过滤永远开启
 	setShadowLayer()：只能用在文本上
 	ComposeShader
-	ComposeShader只能包含不同类型的shader (比如一个BitmapShader和一个LinearGradient，但不能是两个BitmapShader实例)
+	ComposeShader
+	只能包含不同类型的shader (比如一个BitmapShader和一个LinearGradient，但不能是两个BitmapShader实例)
+	
 	ComposeShader不能包含ComposeShader
+	
 	如果应用程序受到这些影响，您可以在受影响的部分调用setLayerType(View.LAYER_TYPE_SOFTWARE, null)，这样在其它地方仍然可以享受硬件加速带来的好处
 
 ----------------
@@ -125,7 +137,7 @@ Android MaskFilter的基本使用：
 
 
 ---------------
-Shader 渐变色设置
+*Shader 渐变色设置*
 
 ```java
  //设置渐变器后绘制
@@ -135,6 +147,7 @@ Shader 渐变色设置
         //设置阴影
         mPaint.setShadowLayer(45, 10, 10, Color.GRAY);
 ```
+*Paint.Style区别*
 
 	Paint.Style.FILL    :填充内部
 	Paint.Style.FILL_AND_STROKE  ：填充内部和描边
@@ -181,24 +194,26 @@ Shader 渐变色设置
     }  
 
 ---------------------
-RectF
+*RectF*
 
-	Android Rect和RectF的区别
-	1、精度不一样，Rect是使用int类型作为数值，RectF是使用float类型作为数值
-	2、两个类型提供的方法也不是完全一致
-	
-	Rect：
-	equals(Object obj)   (for some reason it as it's own implementation of equals)
-	exactCenterX()
-	exactCenterY()
-	flattenToString()
-	toShortString()
-	unflattenFromString(String str)
-	
-	RectF：
-	round(Rect dst)
-	roundOut(Rect dst)
-	set(Rect src)
+*	Android Rect和RectF的区别*
+
+		1、精度不一样，Rect是使用int类型作为数值，RectF是使用float类型作为数值
+		2、两个类型提供的方法也不是完全一致
+		
+		Rect：
+		equals(Object obj)   (for some reason it as it's own implementation of equals)
+		exactCenterX()
+		exactCenterY()
+		flattenToString()
+		toShortString()
+		unflattenFromString(String str)
+		
+		RectF：
+		round(Rect dst)
+		roundOut(Rect dst)
+		set(Rect src)
+
 
 
 **Shader**
@@ -219,39 +234,64 @@ Paint p=new Paint();
 LinearGradient lg=new LinearGradien(0,0,100,100,Color.RED,Color.BLUE,Shader.TileMode.MIRROR);  
 ```
 
-	参数一为渐变起初点坐标x位置，参数二为y轴位置，参数三和四分辨对应渐变终点，最后参数为平铺方式，这里设置为镜像
+
+	参数一为渐变起初点坐标x位置，
+	参数二为y轴位置，
+	参数三和四分辨对应渐变终点，
+	最后参数为平铺方式，这里设置为镜像
 	Gradient是基于Shader类，所以我们通过Paint的setShader方法来设置这个渐变，代码如下: mPaint.setShader(lg);
+	
 	canvas.drawCicle(0,0,200,mPaint); //参数3为画圆的半径，类型为float型。
 	 
+	 
 	它除了定义开始颜色和结束颜色以外还可以定义，多种颜色组成的分段渐变效果
+	
 	LinearGradient shader = new LinearGradient(0, 0, endX, endY, new int[]{startColor, midleColor, endColor},new float[]{0 , 0.5f, 1.0f}, TileMode.MIRROR);
+	
 	其中参数new int[]{startColor, midleColor, endColor}是参与渐变效果的颜色集合，
+	
 	其中参数new float[]{0 , 0.5f, 1.0f}是定义每个颜色处于的渐变相对位置，
+	
 	这个参数可以为null，如果为null表示所有的颜色按顺序均匀的分布
 
 
-LinearGradient有两个构造函数;
-public LinearGradient(float x0, float y0, float x1, float y1, int[] colors, float[] positions,Shader.TileMode tile) 
-参数:
-float x0: 渐变起始点x坐标
-float y0:渐变起始点y坐标
-float x1:渐变结束点x坐标
-float y1:渐变结束点y坐标
-int[] colors:颜色 的int 数组
-float[] positions: 相对位置的颜色数组,可为null,  若为null,可为null,颜色沿渐变线均匀分布
-Shader.TileMode tile: 渲染器平铺模式
 
-public LinearGradient(float x0, float y0, float x1, float y1, int color0, int color1,Shader.TileMode tile)
-float x0: 渐变起始点x坐标
-float y0:渐变起始点y坐标
-float x1:渐变结束点x坐标
-float y1:渐变结束点y坐标
-int color0: 起始渐变色
-int color1: 结束渐变色
-Shader.TileMode tile: 渲染器平铺模式
+*LinearGradient有两个构造函数;*
 
-
-Android 透明度渐变
+>public LinearGradient(float x0, float y0, float x1, float y1, int[] colors, float[] positions,Shader.TileMode tile) 
+	
+	参数:
+	float x0: 渐变起始点x坐标
+	
+	float y0:渐变起始点y坐标
+	
+	float x1:渐变结束点x坐标
+	
+	float y1:渐变结束点y坐标
+	
+	int[] colors:颜色 的int 数组
+	
+	float[] positions: 相对位置的颜色数组,可为null,  若为null,可为null,颜色沿渐变线均匀分布
+	
+	Shader.TileMode tile: 渲染器平铺模式
+	
+	public LinearGradient(float x0, float y0, float x1, float y1, int color0, int color1,Shader.TileMode tile)
+	float x0: 渐变起始点x坐标
+	
+	float y0:渐变起始点y坐标
+	
+	float x1:渐变结束点x坐标
+	
+	float y1:渐变结束点y坐标
+	
+	int color0: 起始渐变色
+	
+	int color1: 结束渐变色
+	
+	Shader.TileMode tile: 渲染器平铺模式
+	
+	
+	Android 透明度渐变
 
 -------------------------
 
@@ -310,8 +350,8 @@ Android 透明度渐变
         return returnedBitmap;
     }
 ```
-
-*##对canvas的translate()方法的理解*
+--------------
+*对canvas的translate()方法的理解*
 
         
 
@@ -329,6 +369,7 @@ canvas.save();//锁画布(为了保存之前的画布状态)
         canvas.restore();
 ```
 
+-----------
 
 *图片镜像*
 
