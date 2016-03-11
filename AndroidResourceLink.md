@@ -286,6 +286,7 @@
  - [一个手势库](https://github.com/mattbryson/TouchSwipe-Jquery-Plugin)
  - [bootstrap-filestyle](https://github.com/markusslima/bootstrap-filestyle)
  - [基于Codeigniter的CMS系统](https://github.com/znddzxx112/bitcms)
+ - [微信调试外网穿透利器](http://blog.qqbrowser.cc/)
 
 
 ### 其他
