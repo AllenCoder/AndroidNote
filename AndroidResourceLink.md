@@ -201,7 +201,8 @@
  - [左滑粒子删除效果](https://github.com/ZhaoKaiQiang/ParticleLayout)
  - [JSON Server：零编码快速“伪造” REST API](https://github.com/typicode/json-server)
  - [开源音乐播放器](https://github.com/AllenCoder/android-UniversalMusicPlayer)
-
+ - [一个支持 url 打开 activity 的开源库](https://github.com/AllenCoder/ActivityRouter)
+ 
 ### 安卓资源相关
  - [安卓每个版本的Drawable图标](http://androiddrawables.com/)
  - [FontAwesome字体图标安卓字符串](https://github.com/liltof/font-awsome-for-android)
