@@ -44,8 +44,8 @@
  - [http://www.developerphil.com/android-studio-tips-of-the-day-roundup-5/](http://www.developerphil.com/android-studio-tips-of-the-day-roundup-5/)
  - [http://www.developerphil.com/android-studio-tips-of-the-day-roundup-6/](http://www.developerphil.com/android-studio-tips-of-the-day-roundup-6/)
  - [SVG矢量图库](http://www.jianshu.com/p/456df1434739)
-
-
+ - [Android Studio advanced configuration](http://liukun.engineer/2016/04/10/Android-Studio-advanced-configuration/)
+ 
 ### Android 开发中值得看的优秀内容和工具
  - [InfoQAndroid周报](http://www.infoq.com/cn/android-weekly/)
  - [开发技术前线](http://www.devtf.cn/)
@@ -202,6 +202,8 @@
  - [JSON Server：零编码快速“伪造” REST API](https://github.com/typicode/json-server)
  - [开源音乐播放器](https://github.com/AllenCoder/android-UniversalMusicPlayer)
  - [一个支持 url 打开 activity 的开源库](https://github.com/AllenCoder/ActivityRouter)
+ - [Android开发中，那些让你相见恨晚的方法、类或接口](http://liukun.engineer/2016/04/11/Android%E5%BC%80%E5%8F%91%E4%B8%AD%EF%BC%8C%E9%82%A3%E4%BA%9B%E8%AE%A9%E4%BD%A0%E7%9B%B8%E8%A7%81%E6%81%A8%E6%99%9A%E7%9A%84%E6%96%B9%E6%B3%95%E3%80%81%E7%B1%BB%E6%88%96%E6%8E%A5%E5%8F%A3/)
+
  
 ### 安卓资源相关
  - [安卓每个版本的Drawable图标](http://androiddrawables.com/)
