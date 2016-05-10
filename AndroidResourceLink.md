@@ -75,6 +75,7 @@
  - [Drawable 着色的后向兼容方案](http://www.race604.com/tint-drawable/)
  - [Awesome-MaterialDesign](https://github.com/lightSky/Awesome-MaterialDesign)
  - [滑动关闭 Activity](http://blog.csdn.net/meijian531161724/article/details/50763931)
+ - [Android架构合集](http://www.jianshu.com/p/1f21e1d375aa)
 
  
 ### Android 开源软件
@@ -300,3 +301,4 @@
  - [hack_erya](https://github.com/Bpazy/hack_erya)
  - [owncloud](https://github.com/owncloud/)
  - [Mac OS X 和 Linux 下更好用的微信客户端: Electronic Wechat](https://github.com/geeeeeeeeek/electronic-wechat)
+ - [一个很赞的RecyclerView Adapter辅助类](http://droidyue.com/blog/2016/05/09/baserecyclerviewadapterhelper/index.html)
