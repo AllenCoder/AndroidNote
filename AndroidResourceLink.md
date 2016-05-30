@@ -170,6 +170,7 @@
  - [dexposed](https://github.com/alibaba/dexposed)
  - [AndFix](https://github.com/alibaba/AndFix)
  - [AndFix学习记录](http://www.jianshu.com/p/0f7665944be3)
+ - [RocooFix](https://github.com/dodola/RocooFix)
 
 ### 安卓开发值得关注的库
  - [Android对话框](https://github.com/H07000223/FlycoDialog_Master)
