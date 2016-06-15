@@ -13,7 +13,8 @@
 
 ##Android Tips
 
->	1. 如何在屏幕底部显示DialogFragment对话框，并且与屏幕等宽？
+><font color=red>	1. 如何在屏幕底部显示DialogFragment对话框，并且与屏幕等宽？</font>
+
 	答：这应该就是你想实现的位于底部、与屏幕等宽的DiaglogFragment了。
 	（你问题描述里的“适应屏幕”，我理解的是“与屏幕等宽”）
 	自定义一个位于屏幕底部、与屏幕等宽的DialogFragment
@@ -50,7 +51,7 @@ public class DatePickerDialog extends DialogFragment {
 	
 ```
 
->2.GreenDao 如何支持模糊查询？
+><font color=red>2.GreenDao 如何支持模糊查询？</font>
 答：	
 ```
 	Query<TestEntity> query = dao.queryBuilder().where(Properties.SimpleString.like("%robot")).build();
@@ -65,3 +66,4 @@ public class DatePickerDialog extends DialogFragment {
 ```
 
 -[stackflow解释](http://stackoverflow.com/questions/12927859/why-greendao-doesnt-support-like-operator-completely)
+
