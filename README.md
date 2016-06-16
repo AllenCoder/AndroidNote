@@ -67,3 +67,32 @@ public class DatePickerDialog extends DialogFragment {
 
 -[stackflow解释](http://stackoverflow.com/questions/12927859/why-greendao-doesnt-support-like-operator-completely)
 
+><font color=red>3.Android 横屏模式下，怎么使用键盘不被覆盖掉？</font>
+-[](http://stackoverflow.com/questions/4336762/disabling-the-fullscreen-editing-view-for-soft-keyboard-input-in-landscape)
+```
+    
+
+    editText.setImeOptions(EditorInfo.IME_FLAG_NO_EXTRACT_UI);
+```
+#或者
+
+```
+    <?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"         
+    >
+
+    <EditText
+        android:imeOptions="flagNoExtractUi"
+        android:id="@+id/etTextInAct"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10" >   
+        <requestFocus />
+    </EditText>
+
+</LinearLayout>
+```
+
