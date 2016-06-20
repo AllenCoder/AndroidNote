@@ -96,3 +96,30 @@ public class DatePickerDialog extends DialogFragment {
 </LinearLayout>
 ```
 
+><font color=red>4.一个 byte 字节数组的大小是-128 ~ 127？</font>
+
+>其原因在于:
+	1.byte的大小为8bits而int的大小为32bits
+	2.java的二进制采用的是补码形式
+
+	在这里先温习下计算机基础理论
+
+	byte是一个字节保存的，有8个位，即8个0、1。
+	8位的第一个位是符号位， 
+	也就是说0000 0001代表的是数字1 
+	1000 0000代表的就是-1 
+	所以正数最大位0111 1111，也就是数字127 
+	负数最大为1111 1111，也就是数字-128
+
+
+><font color=red>5.Android 富文本</font>
+
+
+```
+	//设置字体(加粗斜体)
+	textview4 = (TextView) findViewById(R.id.text4);
+	SpannableStringBuilder spannableStringBuilder4 = new SpannableStringBuilder("Android");
+	StyleSpan styleSpan = new StyleSpan(Typeface.BOLD_ITALIC);
+	spannableStringBuilder4.setSpan(styleSpan, 0, 3, Spannable.SPAN_EXCLUSIVE_INCLUSIVE);
+	textview4.setText(spannableStringBuilder4);
+```
