@@ -174,3 +174,17 @@ public class DatePickerDialog extends DialogFragment {
         // dialog.onWindowAttributesChanged(lp);
         dialogWindow.setAttributes(lp);
 ```
+
+```
+    多个点可以连成一个折线,如何将折线的拟合处变为曲线,使得整个线看上去更加平滑呢?
+
+方法1:
+
+Paint.setStrokeJoin(Paint.Join.ROUND)
+这个方法可以将path中所有线段的Join方式设置为ROUND,实际效果就是拟合处变成了更加平滑的曲线;
+方法2:
+
+CornerPathEffect cornerPathEffect = new CornerPathEffect(200);
+Paint.setPathEffect(cornerPathEffect);
+此处的200就是平滑的度数;
+```
