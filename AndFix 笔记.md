@@ -1,0 +1,1 @@
+`./apkpatch.sh -f new.apk -t old.apk -o out/ -k Juyoulicai.jks -p Juyoulicai -a Juyoulicai -e Juyoulicai`
