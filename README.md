@@ -3,10 +3,10 @@
 
 
 ## 地址链接
-- [个人站点]( www.devcoder.cn)
+- [个人站点]( http://www.devcoder.cn/)
 - [lizhangqu Github 资源链接主页](https://github.com/lizhangqu/CoreLink)
 - [Android 开发中的日常积累](https://github.com/AllenCoder/AndroidNote/blob/master/AndroidResourceLink.md)
-- [沪深300指数走势图 Android 版](https://github.com/AllenCoder/AndroidDevCoder/tree/master/linechart)
+- [沪深300指数走势图 Android 版](https://github.com/AllenCoder/AndroidDevCoder)
 - [Android小知识库](http://wuxiaolong.me/2015/08/10/android-small-knowledge-base/)
 - [Android下列表视图的性能优化
 ](http://boxcounter.com/technique/2015-08-01-Android%E4%B8%8B%E5%88%97%E8%A1%A8%E8%A7%86%E5%9B%BE%E7%9A%84%E6%80%A7%E8%83%BD%E4%BC%98%E5%8C%96/)
@@ -52,6 +52,7 @@ public class DatePickerDialog extends DialogFragment {
 ```
 
 ><font color=red>2.GreenDao 如何支持模糊查询？</font>
+
 答：	
 ```
 	Query<TestEntity> query = dao.queryBuilder().where(Properties.SimpleString.like("%robot")).build();
@@ -73,7 +74,7 @@ public class DatePickerDialog extends DialogFragment {
     
 
     editText.setImeOptions(EditorInfo.IME_FLAG_NO_EXTRACT_UI);
-```
+    
 #或者
 
 ```
@@ -125,10 +126,12 @@ public class DatePickerDialog extends DialogFragment {
 ```
 ><font color=red>6.DialogFragment 指定位置，指定大小，指定进入退出动画</font>
 
+
+ **方法1**： 将对话框的大小按屏幕大小的百分比设置
+ 
+
+ 
 ```
-	/* 方法1：
-         * 将对话框的大小按屏幕大小的百分比设置
-         */
         WindowManager m = getWindowManager();
         Display d = m.getDefaultDisplay(); // 获取屏幕宽、高用
         WindowManager.LayoutParams p = getWindow().getAttributes(); // 获取对话框当前的参数值
@@ -137,13 +140,13 @@ public class DatePickerDialog extends DialogFragment {
         dialog.show().getWindow().setAttributes(p);
 ```
 
-```
-	        /*  方法2:
-         * 获取对话框的窗口对象及参数对象以修改对话框的布局设置,
-         * 可以直接调用getWindow(),表示获得这个Activity的Window
+**方法2:**
+         * 获取对话框的窗口对象及参数对象以修改对话框的布局设置,         * 可以直接调用getWindow(),表示获得这个Activity的Window
          * 对象,这样这可以以同样的方式改变这个Activity的属性.
          */
-        Window dialogWindow = dialog.show().getWindow();
+         
+```
+ Window dialogWindow = dialog.show().getWindow();
         WindowManager.LayoutParams lp = dialogWindow.getAttributes();
        dialogWindow.setGravity(CENTER_HORIZONTAL | Gravity.CENTER_VERTICAL);
  
@@ -174,16 +177,18 @@ public class DatePickerDialog extends DialogFragment {
         // dialog.onWindowAttributesChanged(lp);
         dialogWindow.setAttributes(lp);
 ```
-
+**多个点可以连成一个折线,如何将折线的拟合处变为曲线,使得整个线看上去更加平滑呢?**
 ```
-    多个点可以连成一个折线,如何将折线的拟合处变为曲线,使得整个线看上去更加平滑呢?
+    
 
-方法1:
-
+**方法1:**
+```
 Paint.setStrokeJoin(Paint.Join.ROUND)
-这个方法可以将path中所有线段的Join方式设置为ROUND,实际效果就是拟合处变成了更加平滑的曲线;
-方法2:
+```
+>这个方法可以将path中所有线段的Join方式设置为ROUND,实际效果就是拟合处变成了更加平滑的曲线;
 
+**方法2:**
+```
 CornerPathEffect cornerPathEffect = new CornerPathEffect(200);
 Paint.setPathEffect(cornerPathEffect);
 此处的200就是平滑的度数;
